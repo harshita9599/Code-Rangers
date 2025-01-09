@@ -1,0 +1,672 @@
+/* General styles for the page */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+.intro-line {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Site Name styling */
+.site-name {
+    font-size: 2rem;
+    color: #030500;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Video container takes up the full viewport */
+.video-container {
+    position: relative;
+    height: 100vh;  /* Full viewport height */
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video covers the container */
+}
+
+/* Text overlay styling */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Centers the text */
+    color: white;
+    text-align: center;
+    z-index: 10;  /* Ensures the text stays above the video */
+}
+
+.text-overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section styling for content below video */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Card Styling */
+.card {
+    display: inline-block;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Section text styling */
+#home h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Other sections like destinations */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to right, #5ffff2, #b8fe7b);
+    
+    color: #030500;
+    padding: 20px 1;
+    text-align: center;
+}
+header {
+    text-align: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #5ffff2, #b8fe7b);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .site-name {
+    font-size: 2rem;
+    color: #030500;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /* Ensure it spans its own line */
+    margin-bottom: 10px;
+}
+
+header .site-name:hover {
+    color: #feb47b;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Center the navigation menu */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #030500;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #feb47b;
+}
+
+/* Initial hidden positions */
+#main-header .site-name {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+#main-nav ul {
+    position: relative;
+    right: -100px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+/* When scrolled, animate to visible positions */
+#main-header.sticky .site-name {
+    left: 0;
+    opacity: 1;
+}
+
+#main-header.sticky #main-nav ul {
+    right: 0;
+    opacity: 1;
+}
+
+
+
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 1;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #feb47b;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* General Reset */
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+  
+  /* Section Title Styling */
+  #top-destinations h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+  }
+  
+  .destination img {
+    width: 100%; /* Ensure the image takes up the full width of the box */
+    height: 100%; /* Ensure the image takes up the full height of the box */
+    object-fit: cover; /* Scale the image to fill the box while maintaining aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    display: block; /* Remove any extra space under the image */
+}
+
+  /* Destination Row Styling */
+  .destination-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for Each Destination Box */
+  .destination-box {
+    width: 250px;
+    height: 300px;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Styling for Destination Name (Highlighted) */
+  .destination-name {
+    background-color: #45443c;
+    color: #979ca8;
+    font-size: 1.25rem;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Styling for Images */
+  .destination-box img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  /* Hover Effect for Destination Boxes */
+  .destination-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .destination {
+    width: 300px;
+    height: 200px; /* Set a fixed aspect ratio */
+    margin: 10px;
+    position: relative;
+    overflow: hidden; /* Ensures the image doesn't overflow the box */
+    text-align: center;
+    border: 2px solid #ccc; /* Optional: Add a border */
+}
+
+@media screen and (max-width: 768px) {
+    .destination {
+        width: 100%; /* Ensure they take full width on tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .destination {
+        width: 100%; /* Ensure they take full width on mobile */
+    }
+}
+
+/* Section Styling */
+#all-destinations {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#all-destinations h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Destination Box Styling */
+.all-destinations-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination-box {
+    width: 350px;
+    height: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Name Above Image */
+.destination-box h3 {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Image Styling */
+.destination-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+
+/* Gallery Container Styling */
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Gallery Item Styling */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 300px; /* Adjust width for each image */
+    height: 200px; /* Fixed height for the images */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fill the box */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 255, 0, 0.5); /* Light green background with transparency */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* Transition for opacity and color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+    background-color: rgba(144, 238, 144, 0.7); /* Light green color when hovered */
+}
+
+/* Text Styling in Overlay */
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Centering the Contact Section */
+.contact-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Contact Box Styling */
+.contact-box {
+    width: 300px; /* Adjusted width for better readability */
+    margin: 0 auto 20px;
+    padding: 30px; /* Increased padding for larger box */
+    background-color: #1e3a8a; /* Blue background */
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Contact Boxes */
+.contact-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Heading Styling */
+.contact-heading h2 {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin: 20px 0;
+}
+
+/* Contact Details Row Styling */
+.contact-row {
+    display: flex;
+    justify-content: center; /* Center the contact boxes */
+    gap: 30px; /* Space between boxes */
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Styling for Text Inside Contact Box */
+.contact-box p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.contact-box strong {
+    color: #ffe600; /* Brighter color for labels */
+}
+
+/* Category Section Styling */
+#categories {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  /* Category Heading */
+  #categories h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Category container to arrange boxes */
+  .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Styling for Each Category Box */
+  .category-box {
+    width: 400px;  /* Make the boxes wider */
+    height: 350px;  /* Adjust box height */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  
+  /* Image inside the category box */
+  .category-img {
+    width: 100%;
+    height: 200px;  /* Set fixed height for the image */
+    object-fit: cover;  /* Ensures the image fills the space */
+    border-radius: 8px;
+  }
+  
+  /* Category Box Heading */
+  .category-box h3 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Description inside the category box */
+  .category-box p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Link hover effect */
+  .category-box a {
+    text-decoration: none;
+    color: inherit;  /* Inherit color from the heading */
+  }
+
+  .gallery img {
+    width: 300px; /* Set desired width */
+    height: 300px; /* Set desired height */
+    object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin: 5px; /* Adds some space between images */
+  }
+  
+  .category-box a:hover h3 {
+    color: #feb47b;  /* Change color on hover */
+  }
+  
+  /* Hover effect for category box */
+  .category-box:hover {
+    transform: scale(1.05);  /* Slightly increase the size on hover */
+    transition: transform 0.3s ease;
+  }
+  
+
+/* Hover effect for category box */
+.category-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styling for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .contact-box {
+        width: 250px; /* Adjust box width for smaller screens */
+        padding: 20px; /* Slightly reduced padding */
+    }
+    
+    .contact-row {
+        flex-direction: column; /* Stack the boxes vertically */
+        gap: 20px; /* Adjust space between stacked boxes */
+    }
+}
+
+/* Styling for Submit Button */
+.contact-box input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffe600;
+    border: none;
+    color: #1e3a8a;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Submit Button */
+.contact-box input[type="submit"]:hover {
+    background-color: #f1b818;
+}
+
